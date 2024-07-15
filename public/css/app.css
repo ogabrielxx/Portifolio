@@ -1,0 +1,159 @@
+/* Elementos HTML */
+head{
+    background-color: #C1121F;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    width: 100dvw;
+}
+
+body{
+    background-color: #FDF0D5;
+    margin-top: 5rem;
+}
+
+footer{
+    background-color: #C1121F;
+    height: 3rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Classes Utilitárias */
+.fontMonospace{
+    font-family: monospace;
+}
+
+.red-text{
+    color: #C1121F;
+}
+
+.red-bg{
+    background-color: #C1121F;
+}
+
+/* Classes e etc */
+.contentBody{
+    min-height: 100dvh;
+}
+
+.textFooter{
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.titleHeader{
+    position: fixed;
+    top: 1.25rem;
+    left: 2rem;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.languages{
+    display: flex;
+    gap: 2rem;
+}
+
+.titleLanguages{
+    gap: 1rem;
+}
+
+.lang{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.lang:hover{
+    font-size: 3.5rem !important;
+    transition: linear 300ms;
+}
+
+
+/*Tooltip info Principais tecnologias*/
+.infoTechs{
+    position: relative;
+    display: inline-block;
+}
+
+.infoTechs .tooltiptext {
+    visibility: hidden;
+    width: 25rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    left: 150%;
+  }
+
+.infoTechs .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.infoTechs:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/*Tooltip infos tecnologias*/
+.langDiv{
+    position: relative;
+    display: inline-block;
+}
+
+.langDiv .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -125px;
+}
+
+.langDiv .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+
+.langDiv:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.containerImg{
+    border: 5px solid #C1121F;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 25rem;
+    width: 25rem;
+}
+
+.containerImg img{
+    width: 100%;
+}
